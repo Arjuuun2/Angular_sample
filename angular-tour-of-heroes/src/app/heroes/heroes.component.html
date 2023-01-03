@@ -1,0 +1,79 @@
+<h2>{{hero.name | uppercase}} Details</h2>
+<div>
+    <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
+
+
+<h2>{{hero1.name | uppercase}} Details</h2>
+<div><span>id: </span>{{hero1.id}}</div>
+<div><span>name: </span>{{hero1.name}}</div>
+
+<div>
+    <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero1.name" placeholder="name">
+  </div>
+
+
+
+<h2>{{hero2.name | uppercase}} Details</h2>
+<div><span>id: </span>{{hero2.id}}</div>
+<div><span>name: </span>{{hero2.name}}</div>
+
+<div>
+    <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero2.name" placeholder="name">
+  </div>
+
+
+
+
+<h2>{{hero3.name | uppercase}} Details</h2>
+<div><span>id: </span>{{hero3.id}}</div>
+<div><span>name: </span>{{hero3.name}}</div>
+
+<div>
+    <label for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero3.name" placeholder="name">
+  </div>
+
+
+  <h2>My Heroes</h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <button type="button" (click)="onSelect(hero)">
+        <span class="badge">{{hero.id}}</span>
+        <span class="name">{{hero.name}}</span>
+      </button>
+    </li>
+  </ul>
+
+  <ul class="heroes">
+    <li >
+      <button type="button" (click)="onSelect(hero1)">
+        <span class="badge">{{hero1.id}}</span>
+        <span class="name">{{hero1.name}}</span>
+      </button>
+    </li>
+  </ul>
+
+   <ul class="heroes">
+    <li >
+      <button type="button" (click)="onSelect(hero2)">
+        <span class="badge">{{hero2.id}}</span>
+        <span class="name">{{hero2.name}}</span>
+      </button>
+    </li>
+  </ul>
+
+  <ul class="heroes">
+    <li>
+      <button type="button" (click)="onSelect(hero3)">
+        <span class="badge">{{hero3.id}}</span>
+        <span class="name">{{hero3.name}}</span>
+      </button>
+    </li>
+  </ul> 
+
+
+<h3>{{zero}}</h3>
